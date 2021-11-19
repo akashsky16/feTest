@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.slide{
+    display: flex;
+}
+
+img{
+    width: 1345px;
+    height: 660px;
+}
+
+
+
+#prevBtn{
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    z-index: 10;
+    left: 5px;
+    color: rgb(250, 244, 244);
+    opacity: 0.5;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+}
+
+#nextBtn{
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    z-index: 10;
+    right: 5px;
+    color: rgb(250, 244, 244);
+    opacity: 0.5;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+}
+
+#box{
+    position: absolute;
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom :20px;
+    left :20px;
+    cursor: pointer;
+}
+
+
+
+#box2, #box1, #box3, #box4, #box5, #box6, #box7, #box0{
+    border: 3px dotted white;
+    padding: 2px;
+
+
+}
+
+#box0:hover{
+    background-color: white;
+    color: black;
+}
+
+#box1:hover{
+    background-color: white;
+    color: black;
+}
+
+#box3:hover{
+    background-color: white;
+    color: black;
+}
+
+#box4:hover{
+    background-color: white;
+    color: black;
+}
+
+#box5:hover{
+    background-color: white;
+    color: black;
+}
+
+#box6:hover{
+    background-color: white;
+    color: black;
+}
+
+#box7:hover{
+    background-color: white;
+    color: black;
+}
+
+#box2:hover{
+    background-color: white;
+    color: black;
+}
+
+.header{
+    font-size: 32px;
+}
+.details{
+    display: inline;
+    color: white;
+    font-size: 12px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    font-weight: 500;
+    margin-left: 250px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#subTitle{
+    font-size: 32px;
+    left:20px
+} 
+
+#super{
+    padding-top: 13em;
+    text-align: center;
+    height: 21em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+#loader {
+    position: absolute;
+    left: 43%;
+    top: 38%;
+    background: url('./images/monk.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    width: 150px;
+    height: 150px;
+    -webkit-animation: move 0.5s linear infinite;
+    animation: move 0.5s linear infinite;
+  }
+  
+  @-webkit-keyframes move {
+    0% { -webkit-transform: translateY(20px); }
+    100% { -webkit-transform: translateY(-20px); }
+  }
+  
+  @keyframes move {
+    0% { transform: translateY(20px); }
+    100% { transform: translateY(-20px); }
+  }
+  
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  
+
+  /* For Mobile Screen */
+
+  @media screen and (min-width: 360px) and (max-width: 640px){
+    img{
+        height: 640px;
+    }
+
+    #subTitle{
+        text-align: left;
+        font-size: 22px;
+        left: 5px;
+    }
+
+    #loader{
+        left:32%;
+    }
+
+    #box{
+        left:2%;
+        bottom: 4%;
+    }
+
+    .footer{
+        right: 2%;
+        bottom: 4%;
+    }
+  }
+
+/* For Ipad Screen */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    img{
+        
+        height: 1020px;
+
+    }
+
+    #loader{
+        top:22%;
+    }
+
+    #super{
+        height: 32em;
+    }
+
+}
